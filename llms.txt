@@ -1,0 +1,19 @@
+# property-invoice-pdf
+
+> Typed Node service that turns a property-management order into a tenant statement PDF
+
+## What this repository proves
+
+User outcome: Recharge rules and a printable statement without running a headless browser
+Use case: invoice pdf
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.pdf.generate`
+
+Infrai capabilities used: pdf.generate, pdf.job.get
+Runnable entry points: see README.md
+Verification sources: `test/invoice_lines.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

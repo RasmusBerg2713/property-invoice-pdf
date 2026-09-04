@@ -1,0 +1,19 @@
+{
+  "name": "property-invoice-pdf",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test test/invoice_lines.test.ts",
+    "serve": "node --experimental-strip-types src/invoice_service.ts",
+    "demo": "node --experimental-strip-types src/render_demo.ts"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "typescript": "^5.6.2"
+  }
+}
